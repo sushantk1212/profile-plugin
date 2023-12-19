@@ -1,0 +1,213 @@
+@import url(https://use.fontawesome.com/releases/v5.10.2/css/all.css);
+@import url(//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css);
+@import url(//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css);
+
+.profile-filter-page {
+  max-width: 960px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.profile-filter-page input{
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+}
+
+.profile-filter-page .keyword-cls input{
+   width: 56%;
+}
+
+.keyword-cls{
+  margin-bottom: 14px;
+}
+
+.skills-education, .age-ratings, .jobs-experience-profile {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.profile-jobs, .profile-experience{
+  display: flex;
+}
+
+.profile-jobs label{
+  width: 80px;
+  margin-right: 13px;
+}
+
+.profile-jobs input{
+  width: 211px;
+  height: 36px;
+}
+
+.profile-experience label{
+  width: 80px;
+  margin-right: 23px;
+  padding-left: 4px;
+}
+
+.profile-experience input{
+  width: 211px;
+  height: 36px;
+}
+
+.skills-cls label {
+  padding-right: 35px;
+}
+
+.js-example-basic-multiple {
+  width: 221px;
+}
+.keyword-cls label{
+  padding-right: 5px;
+}
+.education-cls label{
+  padding-left: 10px;
+}
+.age-ratings .age-cls input{
+    width: 191px;
+    margin-left: 43px;
+}
+.age-ratings .age-cls output{
+    position: relative;
+    bottom: 5px;
+}
+.rating-cls{
+  padding-left: 25px;
+}
+.rating-cls .star-rating{
+  margin-left: 20px;
+}
+.select2-container--default .select2-selection--multiple{
+  border: 1px solid #000 !important;
+  border-radius: 5px !important;
+  margin: 0;
+}
+.select2-container .select2-selection--multiple .select2-selection__rendered{
+  margin: 0;
+}
+.rating {
+    display: inline-block;
+    position: relative;
+    height: auto;  /*  35px  */
+    line-height: 35px;
+    font-size: 22px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #e6e6e6;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #666;
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #e6e6e6;
+    text-shadow: 0 0 5px #ffa904;
+  }
+
+  .profile-filter-page input.submit-btn{
+    margin-left: 240px;
+    margin-right: 240px;
+    color: #fff !important;
+    background: #666 !important;
+    border-radius: 5px !important;
+  }
+
+  .dataTables_paginate{
+    margin-bottom: 35px;
+  }
+
+  .dataTables_wrapper{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  table.profiletable thead>tr>th.profileid:before,table.profiletable thead>tr>th.profileid:after{ 
+      opacity: 0;
+  }
+
+.profile-filter-page input { background-color: #e6e6e6 !important; border: 1px solid #000; padding: 5px; border-radius: 0; color: #000; font-size: 14px; font-weight: 400;}
+.submit-btn { background-color: #767676; color: #fff; display: inline-block; text-align: center; width: 150px; border: 0; border-radius: 0; margin: 15px; cursor: pointer; height: 37px; padding: 0; }
+
+@media screen and (max-width: 600px) {
+  .skills-education, .age-ratings, .jobs-experience-profile{
+    display: block;
+    padding: 0 15px;
+  }
+  .keyword-cls{
+    padding: 0 15px;
+  }
+  .education-cls label, .rating-cls{
+    padding-left: 0;
+  }
+  .profile-experience label{
+    margin-right: 18px;
+  }
+  .profile-filter-page input.submit-btn{
+    margin: 0 auto;
+    display: block;
+  }
+  .skills-cls{
+    margin-bottom: 12px;
+  }
+  .skills-cls label{
+    padding-right: 38px;
+  }
+  .profile-jobs label{
+    margin-right: 18px;
+  }
+  .profile-experience label{
+    padding-left: 0;
+  }
+}
